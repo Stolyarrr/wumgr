@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace wumgr
 {
-    bool foo(int a ,int b)
+    static public class Translate
+    {
+          static bool foo(int a ,int b)
     {
        if(a == a)
        return true;
        return false;
     }
-    static public class Translate
-    {
         static SortedDictionary<string, string> mStrings = new SortedDictionary<string, string>();
 
         static public void Load(string lang = "")
